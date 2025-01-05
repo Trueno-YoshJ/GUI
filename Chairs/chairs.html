@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chairs</title>
+        <link rel="icon" href="icon_title.png" type="image/icon type">
+        <link rel = "stylesheet" href = "chairs.css">
+    </head>
+    <body>
+        <header class = "header">
+            <img src = "toplogo.png" alt = "logo" class ="logo">
+            <ul class = "UL_heading">
+                <li><a href= "C:\Users\User\OneDrive\Documents\GitHub\GUI\Welcome_page\Web_Page.html">Home</a></li>
+                <li><a href = "#">Shop</a>
+                    <ul class = "dropdown">
+                        <li><a href = "#">My cart</a></li>
+                        <li><a href = "#">Privacy and Policy</a></li>
+                        <li><a href = "#">About us</a></li>
+                    </ul></li>
+                <li><a href = "#">Product</a>
+                <ul class = "dropdown">
+                    <li><a href = "#">Chairs</a></li>
+                    <li><a href = "#">Sofas</a></li>
+                    <li><a href = "#">Tables</a></li>
+                    <li><a href = "#">Beds</a></li>
+                    <li><a href = "#">Others</a></li>
+                </ul></li>
+                <li><a href="javascript:void(0);" id="feedbackLink">Feedback</a></li>
+                <li><a href = "C:\Users\User\OneDrive\Documents\GitHub\GUI\Login & Signup Web\Login_Signup_web.html">Log In</a></li>
+            </ul>
+        </header>
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModalBtn">&times;</span>
+                <h2>Feedback Form</h2>
+                <form id="feedbackForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+        <div class = "Head_line">
+            <div class = "image-container"></div>
+            <h1>Chairs</h1>
+            <p id = "path"><a href = "C:\Users\User\OneDrive\Documents\GitHub\GUI\Welcome_page\Web_Page.html">
+                Home</a> > <a href = "C:\Users\User\OneDrive\Documents\GitHub\GUI\Chairs\chairs.html">
+                Chairs</a></p>
+        </div>
+
+        <div class="container">
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="wood_chair.png" alt="Image" class="box-image">
+                    <h3 class="box-title">Wood Chair</h3>
+                    <p class="box-text">$28.50</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Wood Chair', 28.50)">ADD TO CART</button>
+                <p class="amount">60 items</p>
+            </div>
+
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="office_chair_small.jpg" alt="Image" class="box-image">
+                    <h3 class="box-title">Office Chair(small)</h3>
+                    <p class="box-text">$33.45</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Office Chair(small)', 33.45)">ADD TO CART</button>
+                <p class="amount">40 items</p>
+            </div>
+
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="office_chair_medium.jpg" alt="Image" class="box-image">
+                    <h3 class="box-title">Office Chair(medium)</h3>
+                    <p class="box-text">$60.45</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Office Chair(medium)', 60.45)">ADD TO CART</button>
+                <p class="amount">22 items</p>
+            </div>
+
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="rattan_chair.avif" alt="Image" class="box-image">
+                    <h3 class="box-title">Rattan Chair</h3>
+                    <p class="box-text">$110.45</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Rattan Chair', 110.45)">ADD TO CART</button>
+                <p class="amount">10 items</p>
+            </div>
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="cusion_chair.jpg" alt="Image" class="box-image">
+                    <h3 class="box-title">Cusion Chair</h3>
+                    <p class="box-text">$70.25</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Cusion Chair', 70.25)">ADD TO CART</button>
+                <p class="amount">20 items</p>
+            </div>
+            <div class="clickable-box">
+                <a href="https://www.example.com" class="box-content">
+                    <img src="semi-cusion.jpg" alt="Image" class="box-image">
+                    <h3 class="box-title">Semi-Cusion Chair</h3>
+                    <p class="box-text">$85.69</p>
+                </a>
+                <button class="box-button" onclick="addToCart('Semi-Cusion Chair', 85.69)">ADD TO CART</button>
+                <p class="amount">28 items</p>
+            </div>
+        </div>
+
+        <div id="cartModal" class="cart-container">
+            <div class="cart-modal">
+                <h2 class="cart-header">Your Cart</h2>
+                <div id="cartItems"></div>
+                <button class="cart-close" onclick="closeCart()">Close</button>
+            </div>
+        </div>
+    
+        <button onclick="viewCart()" id="viewCart">View Cart</button>
+    
+            
+        <script src="chairs.js"></script>
+        
+        
+
+
+
+
+
+
+    </body>
+</html>

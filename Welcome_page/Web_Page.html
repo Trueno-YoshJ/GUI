@@ -12,7 +12,7 @@
     <header class = "header">
         <img src = "toplogo.png" alt = "logo" class ="logo">
         <ul class = "UL_heading">
-            <li><a href= "C:\Users\User\OneDrive\Documents\GitHub\GUI\Welcome_page\Web_Page.html">Home</a></li>
+            <li><a href= "../Welcome_page/Web_Page.html">Home</a></li>
             <li><a href = "#">Shop</a>
                 <ul class = "dropdown">
                     <li><a href = "#">My cart</a></li>
@@ -21,15 +21,34 @@
                 </ul></li>
             <li><a href = "#">Product</a>
             <ul class = "dropdown">
-                <li><a href = "#">Home furniture</a></li>
-                <li><a href = "#">Office Furniture</a></li>
-                <li><a href = "#">Outdoor Furniture</a></li>
-                <li><a href = "#">Special Furniture</a></li>
+                <li><a href = "../Chairs/chairs.html">Chairs</a></li>
+                <li><a href = "#">Sofas</a></li>
+                <li><a href = "#">Tables</a></li>
+                <li><a href = "#">Beds</a></li>
+                <li><a href = "#">Others</a></li>
             </ul></li>
-            <li><a href = "a">Feedback</a></li>
-            <li><a href = "C:\Users\User\OneDrive\Documents\GitHub\GUI\Login & Signup Web\Login_Signup_web.html">Log In</a></li>
+            <li><a href="javascript:void(0);" id="feedbackLink">Feedback</a></li>
+            <li><a href = "../Login & Signup Web/Login_Signup_web.html">Log In</a></li>
         </ul>
     </header>
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModalBtn">&times;</span>
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
     <div class = "top-right-icons">
         <a href = "a"><i class='bx bx-search-alt'></i></a>
         <a href = "a"><i class='bx bx-user' ></i></a>
@@ -108,6 +127,25 @@
                 <div class="text-overlay">Royal Golden Sofa</div>
             </a>
         </div>
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModalBtn">&times;</span>
+                <h2>Feedback<br></h2>
+                <form id="feedbackForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="feedback">Your Feedback:</label>
+                    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+        </div>
         <footer id = "#footer" class="footer">
             <div class="footer-content">
                 <div class="footer-about">
@@ -118,7 +156,7 @@
                     <h3>Contact Us</h3>
                     <p id = "ft_para">No:7 , De Soyza Rd, Rawatawatta, Moratuwa, Sri Lanka
                         <br>+123 456 7890<br>
-                    <email>NimalFurniture@.com</email></p>
+                    <email>NimalFurniture@gmail.com</email></p>
                 </div>
                 <div class="footer-social">
                     <h3>Follow Us</h3>
@@ -129,6 +167,7 @@
                 
             </div>
         </footer>
+        <script src = "Web_Page.js"></script>
 
 </body>
 
