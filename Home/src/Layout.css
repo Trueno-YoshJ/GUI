@@ -1,0 +1,6 @@
+/* src/Layout.css */
+.main-content {
+    margin-top: 60px; /* Add space so content doesn't hide behind navbar */
+    padding: 20px;
+  }
+  

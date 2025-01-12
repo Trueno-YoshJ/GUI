@@ -1,0 +1,94 @@
+.Head {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    position: fixed;
+    width: 200px;
+    top: 20px;
+    left: 270px; 
+}
+
+h1 {
+    position: relative;
+    padding: 10px;
+    left: 270px;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    padding-top: 10px; 
+    margin-left: 220px; 
+}
+
+.sale-progression{
+    position: relative;
+    background-color: #f0f0f0;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor:pointer;
+    transition: 400ms ease-in;
+    flex: 1; 
+}
+.stock-summary{
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor:pointer;
+    transition: 400ms ease-in;
+    flex: 1;
+}
+
+.sales-graph {
+    position: relative;
+    background-color: #f0f0f0;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor:pointer;
+    transition: 400ms ease-in;
+    flex: 1; 
+}
+
+.sale-progression h3,
+.stock-summary h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sale-progression p,
+.stock-summary p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.sale-progression p strong,
+.stock-summary p strong {
+    color: #333;
+}
+
+.sale-progression:hover{
+    transform: scale(1.10);
+}
+.stock-summary:hover{
+    transform: scale(1.10);
+}
+.sales-graph:hover{
+    transform: scale(1.10);
+}
+.sales-graph {
+    height: 400px;
+    margin-top: 20px; 
+}
+
+
