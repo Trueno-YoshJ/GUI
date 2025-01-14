@@ -8,10 +8,10 @@ export function Navbar(){
             <button>Home</button>
         </Link>
         <Link to ="/page1">
-            <button>Page1</button>
+            <button>Inventory</button>
         </Link>
-        <Link to ="/log in">
-            <button>Login</button>
+        <Link to ="/page2">
+            <button>Feedback</button>
         </Link>
         </div>
     )

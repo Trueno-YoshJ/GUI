@@ -1,0 +1,58 @@
+.Container {
+  padding: 20px;
+  width: 90%; /* Make width responsive */
+  max-width: 1200px; /* Optional: Set a maximum width */
+  justify-items:center ;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 15px;
+    width: 95%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .Container {
+    padding: 10px;
+    width: 100%; /* Use full width for very small screens */
+  }
+}
+
+
+h2{
+  text-align:center;
+  color: rgb(184, 144, 0);
+}
+input {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    z-index: 10;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  

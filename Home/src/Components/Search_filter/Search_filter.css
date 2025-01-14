@@ -1,0 +1,70 @@
+.inventory-search {
+    position:absolute;
+    width:35vw;
+    top:10px;
+    right:5vw;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #0037ff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 55, 255, 0.3);
+    transition: 300ms ease-in-out;
+    z-index: 10;
+  }
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  padding:5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.search-icon {
+  font-size: 20px;
+  margin: 0 8px;
+  color: #888;
+}
+  
+  .search-bar {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    background-color: #ddd;
+    border: 1px solid #0091ff;
+    border-radius: 5px;
+    color:#353535;
+  }
+  .search-bar::placeholder {
+    color: #353535; 
+  }
+  .inventory-search:hover{
+    transform: scale(1.03);
+  }
+  .inventory-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .inventory-item {
+    padding: 10px;
+    border-bottom: 1px solid #777777;
+  }
+  
+  .inventory-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .item-quantity {
+    color: green;
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,23 @@
+#logo1{
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: 280px; 
+}
+#top_image{
+    position: absolute;
+    top:80px;
+    left:240px;
+    width:84.2%;
+    height:200px;
+}
+.vertical-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 300px 200px 10px;
+    width: 100%;
+  }
+  

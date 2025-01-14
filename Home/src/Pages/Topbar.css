@@ -7,7 +7,14 @@
     position: fixed;
     width: 200px;
     top: 20px;
-    left: 270px; 
+    left: 280px; 
+}
+#topimage{
+    position: fixed;
+    top:80px;
+    left:240px;
+    width:92.5%;
+    height:200px;
 }
 
 h1 {
@@ -17,6 +24,8 @@ h1 {
 }
 
 .blocks {
+    position: fixed;
+    top:300px;
     display: flex;
     justify-content: space-between;
     gap: 20px; 
@@ -86,9 +95,6 @@ h1 {
 .sales-graph:hover{
     transform: scale(1.10);
 }
-.sales-graph {
-    height: 400px;
-    margin-top: 20px; 
-}
+
 
 

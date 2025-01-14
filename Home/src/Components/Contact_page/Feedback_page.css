@@ -1,0 +1,101 @@
+#logo{
+  position: absolute;
+  width: 200px;
+  top: 20px;
+  left: 280px; 
+}
+#top_image1{
+  position: absolute;
+  top:80px;
+  left:240px;
+  width:84.2%;
+  height:200px;
+}
+.container {
+  position: absolute;
+  left:300px;
+  top:300px;
+  margin: 20px;
+  padding: 20px;
+  background: #ecebeb;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+form {
+  margin-bottom: 20px;
+  flex:1;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+form input,
+form textarea,
+form button{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  color:black;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #9fabb7;
+  outline: none;
+}
+
+form button{
+  background: #d48e01;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #ffbc05;
+}
+.feedback-block{
+  flex:2;
+}
+.feedback-block h2 {
+  font-size: 1.5em;
+}
+
+.feedback-block table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.feedback-block th,
+.feedback-block td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.feedback-block th {
+  background: #f9f9f9;
+}
+
+.feedback-block tr:nth-child(even) {
+  background: #f4f4f4;
+}
+
+.feedback-block tr:hover {
+  background: #e9f5ff;
+}
+
+.feedback-block p {
+  color: #666;
+  font-size: 0.9em;
+}
