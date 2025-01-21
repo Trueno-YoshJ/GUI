@@ -1,25 +1,24 @@
 .Container {
   padding: 20px;
-  width: 90%; /* Make width responsive */
-  max-width: 1200px; /* Optional: Set a maximum width */
+  max-width: 1200px;
   justify-items:center ;
   background: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
   .Container {
     padding: 15px;
-    width: 95%; /* Adjust for smaller screens */
+    width: 95%;
   }
 }
 
 @media (max-width: 480px) {
   .Container {
     padding: 10px;
-    width: 100%; /* Use full width for very small screens */
+    width: 100%;
   }
 }
 

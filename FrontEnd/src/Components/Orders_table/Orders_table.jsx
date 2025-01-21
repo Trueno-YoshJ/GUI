@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Orders_table.css'
 
 const OrdersTable = () => {
-  const [orders, setOrders] = useState([]); // To hold the orders
+  const [orders, setOrders] = useState([]);
   const [orderId, setOrderId] = useState('');
   const [productName, setProductName] = useState('');
   const [quantity, setQuantity] = useState('');
@@ -23,7 +23,6 @@ const OrdersTable = () => {
 
     setOrders([...orders, newOrder]);
 
-    // Clear input fields
     setOrderId('');
     setProductName('');
     setQuantity('');

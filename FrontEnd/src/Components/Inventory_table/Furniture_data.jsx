@@ -6,7 +6,6 @@ const furnitureData = [
       quantity: 50,
       price: 45.99,
       supplier: "Furniture Co.",
-      location: "Warehouse A",
     },
     {
       id: 2,
@@ -14,8 +13,6 @@ const furnitureData = [
       category: "Tables",
       quantity: 20,
       price: 120.5,
-      supplier: "Home Supplies Ltd.",
-      location: "Warehouse B",
     },
     {
       id: 3,
