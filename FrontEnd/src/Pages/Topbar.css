@@ -41,7 +41,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid #ddd;
     cursor:pointer;
-    transition: 400ms ease-in;
+    transition: 300ms ease-in-out;
     flex: 1; 
 }
 .stock-summary{
@@ -51,7 +51,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid #ddd;
     cursor:pointer;
-    transition: 400ms ease-in;
+    transition: 300ms ease-in-out;
     flex: 1;
 }
 
@@ -63,7 +63,7 @@ h1 {
     border-radius: 8px;
     border: 1px solid #ddd;
     cursor:pointer;
-    transition: 400ms ease-in;
+    transition: 300ms ease-in-out;
     flex: 1; 
 }
 

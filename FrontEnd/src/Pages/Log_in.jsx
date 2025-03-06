@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../Components/Login.css";
-import { addUser, findUser, findUserByEmail } from "../Components/User";
 import loginImage from "../images/login.jpg";
+import toplogo from "../images/toplogo.png";
 
 export function Login() {
-  const [formType, setFormType] = useState("login"); 
+  const [formType, setFormType] = useState("login");
   const [formData, setFormData] = useState({ email: "", password: "", username: "" });
   const navigate = useNavigate();
 
@@ -14,26 +14,8 @@ export function Login() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleLogin = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    const userExists = findUser(formData.email, formData.password);
-    if (userExists) {
-      localStorage.setItem("isLoggedIn", "true");
-      navigate("/");
-    } else {
-      alert("Invalid email or password. Please try again.");
-    }
-  };
-
-  const handleSignUp = (e) => {
-    e.preventDefault();
-    const userExists = findUserByEmail(formData.email);
-    if (userExists) {
-      alert("User already exists with this email.");
-      return;
-    }
-    const newUser = { email: formData.email, password: formData.password, username: formData.username };
-    addUser(newUser);
     localStorage.setItem("isLoggedIn", "true");
     navigate("/");
   };
@@ -42,7 +24,7 @@ export function Login() {
     <div className="auth-container">
       <div className="auth-block">
         <h2>{formType === "login" ? "Login" : "Sign Up"}</h2>
-        <form onSubmit={formType === "login" ? handleLogin : handleSignUp}>
+        <form onSubmit={handleSubmit}>
           {formType === "signup" && (
             <div>
               <label>Username</label>
@@ -103,6 +85,9 @@ export function Login() {
             </>
           )}
         </p>
+      </div>
+      <div className = "main-Logo">
+          <img src = {toplogo} alt = "Logo" />
       </div>
       <div className="image-block">
         <img src={loginImage} alt="Login Illustration" className="auth-image" />

@@ -1,57 +1,57 @@
-.Container {
+.top-left-container {
   padding: 20px;
-  max-width: 1200px;
-  justify-items:center ;
   background: #f9f9f9;
   border: 1px solid #ccc;
   border-radius: 8px;
+  width: 69vw; /* Set a fixed width for better alignment */
   box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .Container {
-    padding: 15px;
-    width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .Container {
-    padding: 10px;
-    width: 100%;
-  }
-}
-
-
-h2{
-  text-align:center;
+h2 {
+  text-align: center;
   color: rgb(184, 144, 0);
 }
+
+.order-form {
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Evenly space the items */
+  align-items: center; /* Center items vertically */
+  flex-wrap: wrap; /* Wrap items if they exceed container width */
+  margin-bottom: 20px;
+  gap: 10px; /* Add spacing between items */
+}
+
 input {
-    margin: 5px;
-    padding: 10px;
-  }
-  
-  button {
-    margin: 5px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    z-index: 10;
-  }
-  
-  table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-  }
-  
-  table, th, td {
-    border: 1px solid black;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
+  padding: 10px;
+  flex: 1; /* Allow inputs to resize evenly */
+  min-width: 150px; /* Set a minimum width */
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}

@@ -1,45 +1,66 @@
-import React, { useState } from 'react';
-import './Orders_table.css'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import './Orders_table.css';
 
 const OrdersTable = () => {
   const [orders, setOrders] = useState([]);
-  const [orderId, setOrderId] = useState('');
   const [productName, setProductName] = useState('');
   const [quantity, setQuantity] = useState('');
   const [date, setDate] = useState('');
 
-  const handleAddOrder = () => {
-    if (!orderId || !productName || !quantity || !date) {
+  // Fetch all orders from the backend
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/orders');
+        console.log(response.data); // Log the data to verify the structure
+        setOrders(response.data);
+      } catch (error) {
+        console.error('Error fetching orders:', error);
+        alert('Failed to fetch orders. Please check your backend server.');
+      }
+    };
+
+    fetchOrders();
+  }, []);
+
+  const handleAddOrder = async () => {
+    if (!productName || !quantity || !date) {
       alert('Please fill in all fields');
       return;
     }
 
     const newOrder = {
-      orderId,
-      productName,
-      quantity,
-      date,
+      Product_name: productName, // Match database naming convention
+      Quantity: parseInt(quantity, 10),
+      Order_Date: date,
     };
 
-    setOrders([...orders, newOrder]);
+    try {
+      // Send the new order to the backend
+      const response = await axios.post('http://localhost:5000/api/orders', newOrder);
 
-    setOrderId('');
-    setProductName('');
-    setQuantity('');
-    setDate('');
+      // Get the newly created order with its full details
+      const createdOrder = response.data;
+
+      // Update the orders state in real time with the full details
+      setOrders([...orders, createdOrder]);
+
+      // Clear the form fields
+      setProductName('');
+      setQuantity('');
+      setDate('');
+    } catch (error) {
+      console.error('Error adding order:', error);
+      alert('Failed to add order. Please check your backend server.');
+    }
   };
 
   return (
-    <div className = "Container">
+    <div className="top-left-container">
       <h2>Orders Table</h2>
 
-      <div className ="Order-table">
-        <input
-          type="text"
-          placeholder="Order ID"
-          value={orderId}
-          onChange={(e) => setOrderId(e.target.value)}
-        />
+      <div className="order-form">
         <input
           type="text"
           placeholder="Product Name"
@@ -66,16 +87,16 @@ const OrdersTable = () => {
             <th>Order ID</th>
             <th>Product Name</th>
             <th>Quantity</th>
-            <th>Date</th>
+            <th>Order Date</th>
           </tr>
         </thead>
         <tbody>
-          {orders.map((order, index) => (
-            <tr key={index}>
-              <td>{order.orderId}</td>
-              <td>{order.productName}</td>
-              <td>{order.quantity}</td>
-              <td>{order.date}</td>
+          {orders.map((order) => (
+            <tr key={order.Orders_id}>
+              <td>{order.Orders_id}</td>
+              <td>{order.Product_name}</td>
+              <td>{order.Quantity}</td>
+              <td>{new Date(order.Order_Date).toLocaleDateString()}</td>
             </tr>
           ))}
         </tbody>
