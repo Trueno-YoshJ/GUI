@@ -10,7 +10,7 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param pname="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             panel1 = new Panel();
             signup_close = new Label();
             label6 = new Label();
@@ -77,10 +76,10 @@
             // signup_close
             // 
             signup_close.AutoSize = true;
-            signup_close.Font = new Font("Lucida Sans", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            signup_close.Font = new Font("Lucida Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             signup_close.Location = new Point(851, 8);
             signup_close.Name = "signup_close";
-            signup_close.Size = new Size(27, 26);
+            signup_close.Size = new Size(34, 34);
             signup_close.TabIndex = 14;
             signup_close.Text = "X";
             signup_close.Click += signup_close_Click;
@@ -219,7 +218,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = NImal_furniture.Properties.Resources.istockphoto_916796016_612x612;
             pictureBox2.Location = new Point(21, 90);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(751, 410);
@@ -229,7 +228,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = NImal_furniture.Properties.Resources.toplogo1;
             pictureBox1.Location = new Point(21, 26);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(360, 62);

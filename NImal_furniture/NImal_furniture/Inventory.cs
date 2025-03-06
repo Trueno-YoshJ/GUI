@@ -59,20 +59,48 @@ namespace Nimal_furniture
         private void Insert_btn(object sender, EventArgs e)
         {
             create_client form = new create_client();
-            if(form.ShowDialog() == DialogResult.OK)
+            if (form.ShowDialog() == DialogResult.OK)
             {
                 ReadClients();
-            }   
+            }
         }
 
         private void Update_btn(object sender, EventArgs e)
         {
+            var val = this.clientstable.SelectedRows[0].Cells[0].Value.ToString();
+            if (val == null || val.Length == 0) return;
 
+            int clientId = int.Parse(val);
+            var repo = new clients_repo();
+            var client = repo.GetClients(clientId);
+            if (client == null) return;
+
+            create_client form = new create_client();
+            form.EditClient(client);
+
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+
+                ReadClients();
+            }
         }
+
 
         private void Delete_btn(object sender, EventArgs e)
         {
+            var val = this.clientstable.SelectedRows[0].Cells[0].Value.ToString();
+            if (val == null || val.Length == 0) return;
 
+            int clientId = int.Parse(val);
+            DialogResult dialogResult = MessageBox.Show("Do you want to permanently delete this from the inventory?", "Delete Client", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+
+            var repo = new clients_repo();
+            repo.DeleteClient(clientId);
+            ReadClients();
         }
         private void name_TextChanged(object sender, EventArgs e)
         {
@@ -96,6 +124,13 @@ namespace Nimal_furniture
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }

@@ -28,90 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox6 = new TextBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             clientstable = new DataGridView();
+            pictureBox1 = new PictureBox();
+            panel1 = new Panel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)clientstable).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(143, 56);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Product name";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 0;
-            textBox1.TextChanged += name_TextChanged;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(536, 56);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Price";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(405, 56);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Quantity";
-            textBox3.Size = new Size(125, 27);
-            textBox3.TabIndex = 2;
-            textBox3.TextChanged += qty_TextChanged;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(274, 56);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Product type";
-            textBox4.Size = new Size(125, 27);
-            textBox4.TabIndex = 3;
-            textBox4.TextChanged += type_TextChanged;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(12, 56);
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "Id";
-            textBox6.Size = new Size(125, 27);
-            textBox6.TabIndex = 5;
-            textBox6.TextChanged += Id_TextChanged;
             // 
             // button1
             // 
-            button1.Location = new Point(448, 86);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button1.BackColor = Color.SaddleBrown;
+            button1.Font = new Font("Segoe UI Variable Small", 10.8F, FontStyle.Bold);
+            button1.ForeColor = Color.Gold;
+            button1.Location = new Point(454, 1);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(140, 39);
             button1.TabIndex = 6;
             button1.Text = "Insert";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += Insert_btn;
             // 
             // button2
             // 
-            button2.Location = new Point(681, 86);
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button2.BackColor = Color.SaddleBrown;
+            button2.Font = new Font("Segoe UI Variable Small", 10.8F, FontStyle.Bold);
+            button2.ForeColor = Color.Gold;
+            button2.Location = new Point(746, 0);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(140, 38);
             button2.TabIndex = 7;
             button2.Text = "Delete";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += Delete_btn;
             // 
             // button3
             // 
-            button3.Location = new Point(567, 86);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button3.BackColor = Color.SaddleBrown;
+            button3.Font = new Font("Segoe UI Variable Small", 10.8F, FontStyle.Bold);
+            button3.ForeColor = Color.Gold;
+            button3.Location = new Point(600, 0);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(140, 40);
             button3.TabIndex = 8;
             button3.Text = "Update";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += Update_btn;
             // 
             // clientstable
@@ -124,41 +92,69 @@
             clientstable.Name = "clientstable";
             clientstable.RowHeadersWidth = 51;
             clientstable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            clientstable.Size = new Size(763, 317);
+            clientstable.Size = new Size(867, 379);
             clientstable.TabIndex = 9;
             clientstable.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = NImal_furniture.Properties.Resources.toplogo1;
+            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(285, 45);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Wheat;
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(button1);
+            panel1.Location = new Point(-7, 73);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(901, 42);
+            panel1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Lucida Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(845, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(34, 34);
+            label1.TabIndex = 12;
+            label1.Text = "X";
+            label1.Click += label1_Click;
             // 
             // Inventory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ButtonHighlight;
+            ClientSize = new Size(891, 512);
+            Controls.Add(label1);
+            Controls.Add(panel1);
+            Controls.Add(pictureBox1);
             Controls.Add(clientstable);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
             Name = "Inventory";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory";
             ((System.ComponentModel.ISupportInitialize)clientstable).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox6;
         private Button button1;
         private Button button2;
         private Button button3;
         private DataGridView clientstable;
+        private PictureBox pictureBox1;
+        private Panel panel1;
+        private Label label1;
     }
 }

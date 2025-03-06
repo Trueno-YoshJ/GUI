@@ -17,7 +17,7 @@ namespace Nimal_furniture
         public Dashboard()
         {
             InitializeComponent();
-          
+
         }
         private void orders_btn(object sender, EventArgs e)
         {
@@ -104,7 +104,14 @@ namespace Nimal_furniture
 
         private void textbox1(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

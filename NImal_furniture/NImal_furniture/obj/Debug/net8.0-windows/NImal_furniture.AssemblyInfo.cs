@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Nimal_furniture")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("NImal_furniture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+326fb2ee51c633fd74f4b5d9e4434b4336feca6c")]
-[assembly: System.Reflection.AssemblyProductAttribute("Nimal_furniture")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Nimal_furniture")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06a8a648dfcd85aed2a23e8a630fbca6610cf169")]
+[assembly: System.Reflection.AssemblyProductAttribute("NImal_furniture")]
+[assembly: System.Reflection.AssemblyTitleAttribute("NImal_furniture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

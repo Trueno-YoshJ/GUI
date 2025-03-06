@@ -9,4 +9,4 @@
 INSERT INTO clients(pname,ptype,qty,price)
 VALUES
 ('Rattan Chair','Chair','16','250'),
-('Office Table','Table','8','350')
+('Office Table','Table','8','350') 

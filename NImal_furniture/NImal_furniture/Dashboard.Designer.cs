@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
+            label6 = new Label();
             pictureBox2 = new PictureBox();
             panel3 = new Panel();
             button4 = new Button();
@@ -58,6 +59,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonHighlight;
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(pictureBox1);
@@ -67,11 +69,26 @@
             panel1.Size = new Size(891, 512);
             panel1.TabIndex = 0;
             // 
+            // label6
+            // 
+            label6.AccessibleRole = AccessibleRole.OutlineButton;
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.ButtonHighlight;
+            label6.Font = new Font("Lucida Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(844, 12);
+            label6.Name = "label6";
+            label6.Size = new Size(34, 34);
+            label6.TabIndex = 4;
+            label6.Text = "X";
+            label6.Click += label6_Click;
+            // 
             // pictureBox2
             // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(21, 120);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(451, 380);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
@@ -90,9 +107,9 @@
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(488, 111);
+            panel3.Location = new Point(488, 120);
             panel3.Name = "panel3";
-            panel3.Size = new Size(390, 389);
+            panel3.Size = new Size(390, 380);
             panel3.TabIndex = 2;
             panel3.Paint += panel3_Paint;
             // 
@@ -203,7 +220,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = NImal_furniture.Properties.Resources.toplogo1;
             pictureBox1.Location = new Point(11, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(237, 41);
@@ -271,6 +288,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
@@ -300,5 +318,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private PictureBox pictureBox2;
+        private Label label6;
     }
 }

@@ -43,7 +43,7 @@ namespace Nimal_furniture.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exeption : " + ex.Message);
+                Console.WriteLine("Exception : " + ex.Message);
             }
             return clients;
         }
@@ -53,6 +53,7 @@ namespace Nimal_furniture.Repository
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
+                    connection.Open();
                     string sql = "SELECT * FROM clients WHERE id =@id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
@@ -73,7 +74,7 @@ namespace Nimal_furniture.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exeption : " + ex.Message);
+                Console.WriteLine("Exception : " + ex.Message);
             }
             return null;
         }
@@ -84,9 +85,7 @@ namespace Nimal_furniture.Repository
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "INSERT INTO clients" +
-                            "(name,type,quantity,price)" +
-                            "(@name,@type,@quantity,@price)";
+                    string sql = "INSERT INTO clients (pname, ptype, qty, price) VALUES (@name, @type, @quantity, @price)";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@name", clients.name);
@@ -107,23 +106,25 @@ namespace Nimal_furniture.Repository
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Open();
-                    string sql = "UPDATE clients" +
-                            "SET name = @name, type = @type" +
-                            "quantity = @quntity,price = @price" +
-                            "WHERE id=@id";
+                    string sql = "UPDATE clients SET pname = @name, ptype = @type, qty = @quantity, price = @price WHERE id = @id";
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@name", clients.name);
                         command.Parameters.AddWithValue("@type", clients.type);
                         command.Parameters.AddWithValue("@quantity", clients.quantity);
                         command.Parameters.AddWithValue("@price", clients.price);
+
+                        command.Parameters.AddWithValue("@id", clients.id);
                         command.ExecuteNonQuery();
                     }
-
                 }
             }
-            catch (Exception ex) { Console.WriteLine(ex.Message); }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
+
         public void DeleteClient(int id)
         {
             try

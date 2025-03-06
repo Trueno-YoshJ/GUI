@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             panel1 = new Panel();
+            login_username = new TextBox();
             login_close = new Label();
             signup_link = new LinkLabel();
             label4 = new Label();
@@ -41,7 +41,6 @@
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            login_username = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -66,13 +65,23 @@
             panel1.Size = new Size(891, 512);
             panel1.TabIndex = 0;
             // 
+            // login_username
+            // 
+            login_username.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            login_username.Location = new Point(435, 158);
+            login_username.Name = "login_username";
+            login_username.PasswordChar = '*';
+            login_username.Size = new Size(430, 31);
+            login_username.TabIndex = 11;
+            login_username.TextChanged += login_username_TextChanged;
+            // 
             // login_close
             // 
             login_close.AutoSize = true;
-            login_close.Font = new Font("Lucida Sans Typewriter", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            login_close.Location = new Point(856, 9);
+            login_close.Font = new Font("Lucida Sans", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            login_close.Location = new Point(845, 9);
             login_close.Name = "login_close";
-            login_close.Size = new Size(26, 26);
+            login_close.Size = new Size(34, 34);
             login_close.TabIndex = 10;
             login_close.Text = "X";
             login_close.Click += login_close_Click_2;
@@ -166,7 +175,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = NImal_furniture.Properties.Resources.istockphoto_916796016_612x612;
             pictureBox2.Location = new Point(21, 90);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(751, 410);
@@ -176,23 +185,13 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = NImal_furniture.Properties.Resources.toplogo1;
             pictureBox1.Location = new Point(21, 26);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(360, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // login_username
-            // 
-            login_username.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            login_username.Location = new Point(435, 158);
-            login_username.Name = "login_username";
-            login_username.PasswordChar = '*';
-            login_username.Size = new Size(430, 31);
-            login_username.TabIndex = 11;
-            login_username.TextChanged += this.login_username_TextChanged;
             // 
             // Login
             // 
