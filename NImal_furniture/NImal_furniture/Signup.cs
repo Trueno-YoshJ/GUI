@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NImal_furniture
+namespace Nimal_furniture
 {
     public partial class Signup : Form
     {
@@ -37,6 +37,13 @@ namespace NImal_furniture
         private void signup_close_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void signup_button_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-namespace NImal_furniture
+namespace Nimal_furniture
 {
     public partial class Dashboard : Form
     {
@@ -67,7 +67,9 @@ namespace NImal_furniture
 
         private void inventory_btn(object sender, EventArgs e)
         {
-
+            Inventory inventory = new Inventory();
+            inventory.Show();
+            this.Hide();
         }
 
         private void dashboard_btn(object sender, EventArgs e)

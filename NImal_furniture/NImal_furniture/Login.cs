@@ -1,4 +1,4 @@
-namespace NImal_furniture
+namespace Nimal_furniture
 {
     public partial class Login : Form
     {

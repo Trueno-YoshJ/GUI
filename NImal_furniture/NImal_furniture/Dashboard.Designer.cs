@@ -1,4 +1,4 @@
-﻿namespace NImal_furniture
+﻿namespace Nimal_furniture
 {
     partial class Dashboard
     {
@@ -113,6 +113,7 @@
             // 
             textBox5.Location = new Point(159, 102);
             textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "95.47%";
             textBox5.Size = new Size(203, 27);
             textBox5.TabIndex = 11;
             textBox5.TextChanged += txtCurrentStock;
@@ -121,6 +122,7 @@
             // 
             textBox4.Location = new Point(159, 160);
             textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "$375,000";
             textBox4.Size = new Size(203, 27);
             textBox4.TabIndex = 10;
             textBox4.TextChanged += txtStockValue;
@@ -129,6 +131,7 @@
             // 
             textBox3.Location = new Point(159, 214);
             textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "5 days left";
             textBox3.Size = new Size(203, 27);
             textBox3.TabIndex = 9;
             textBox3.TextChanged += txtRemainingTime;
@@ -137,6 +140,7 @@
             // 
             textBox2.Location = new Point(159, 271);
             textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "25-01-2025";
             textBox2.Size = new Size(203, 27);
             textBox2.TabIndex = 8;
             textBox2.TextChanged += txtLastUpdate;
@@ -145,7 +149,7 @@
             // 
             textBox1.Location = new Point(159, 44);
             textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Hello";
+            textBox1.PlaceholderText = "$35,000";
             textBox1.Size = new Size(203, 27);
             textBox1.TabIndex = 3;
             textBox1.TextChanged += textbox1;

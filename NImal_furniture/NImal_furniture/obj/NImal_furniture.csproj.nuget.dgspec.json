@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj": {
+    "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
         "projectName": "NImal_furniture",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

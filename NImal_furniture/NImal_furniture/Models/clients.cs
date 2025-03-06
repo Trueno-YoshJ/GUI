@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NImal_furniture.Models
+namespace Nimal_furniture.Models
 {
     public class Clients
     {
@@ -14,9 +14,6 @@ namespace NImal_furniture.Models
         public int quantity;
         public int price;
 
-        internal void Add(Clients client)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

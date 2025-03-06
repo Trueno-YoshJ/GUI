@@ -1,4 +1,4 @@
-﻿namespace NImal_furniture
+﻿namespace Nimal_furniture
 {
     partial class Signup
     {
@@ -168,6 +168,7 @@
             signup_button.TabIndex = 6;
             signup_button.Text = "Signup";
             signup_button.UseVisualStyleBackColor = false;
+            signup_button.Click += signup_button_Click;
             // 
             // signup_contact
             // 

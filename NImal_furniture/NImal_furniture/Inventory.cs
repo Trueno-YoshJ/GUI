@@ -8,16 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NImal_furniture.Repository;
-using NImal_furniture.Models;
+using Nimal_furniture.Repository;
+using Nimal_furniture.Models;
+using NImal_furniture;
 
-namespace NImal_furniture
+namespace Nimal_furniture
 {
     public partial class Inventory : Form
     {
         public Inventory()
         {
             InitializeComponent();
+            ReadClients();
         }
 
 
@@ -31,20 +33,22 @@ namespace NImal_furniture
             dataTable.Columns.Add("Price");
 
             var repo = new clients_repo();
-            var clients = repo .GetClients();
+            var clients = repo.GetClients();
 
-            foreach (var client in clients) { 
+            foreach (var client in clients)
+            {
 
-            var row = dataTable.NewRow();
+                var row = dataTable.NewRow();
 
-                row["ID"] = clients.id();
-                row["Product Name"] = clients.name();
-                row["Product Type"] = clients.type();
-                row["Quantity"] = clients.quantity();
-                row["Price"] = clients.price();
+                row["ID"] = client.id;
+                row["Product Name"] = client.name;
+                row["Product Type"] = client.type;
+                row["Quantity"] = client.quantity;
+                row["Price"] = client.price;
 
                 dataTable.Rows.Add(row);
             }
+            this.clientstable.DataSource = dataTable;
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
@@ -54,7 +58,11 @@ namespace NImal_furniture
 
         private void Insert_btn(object sender, EventArgs e)
         {
-
+            create_client form = new create_client();
+            if(form.ShowDialog() == DialogResult.OK)
+            {
+                ReadClients();
+            }   
         }
 
         private void Update_btn(object sender, EventArgs e)
@@ -81,6 +89,11 @@ namespace NImal_furniture
         }
 
         private void qty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -7,14 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using MySqlX.XDevAPI;
-using NImal_furniture.Models;
+using Nimal_furniture.Models;
 
 
-namespace NImal_furniture.Repository
+namespace Nimal_furniture.Repository
 {
     public class clients_repo
     {
-        private readonly string connectionString = "Data Source=TRON\\TEW_SQLEXPRESS;Initial Catalog=Inventory;Integrated Security=True;Trust Server Certificate=True";
+        private readonly string connectionString = "Data Source=TRON\\TEW_SQLEXPRESS;Initial Catalog=Myinventory;Integrated Security=True;Trust Server Certificate=True";
         public List<Clients> GetClients()
         {
             var clients = new List<Clients>();
@@ -35,7 +35,8 @@ namespace NImal_furniture.Repository
                                 client.type = reader.GetString(2);
                                 client.quantity = reader.GetInt32(3);
                                 client.price = reader.GetInt32(4);
-                                client.Add(client);
+                               
+                                clients.Add(client);
                             }
                     }
                 }

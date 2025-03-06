@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUWizJC1eeo=",
+  "dgSpecHash": "/tsqC4BN7+8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\OneDrive\\Desktop\\task2Gui\\Vehicle Auction\\New folder\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
+  "projectFilePath": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\NImal_furniture.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
