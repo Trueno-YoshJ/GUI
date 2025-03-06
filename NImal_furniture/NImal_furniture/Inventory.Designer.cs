@@ -48,7 +48,7 @@
             button1.ForeColor = Color.Gold;
             button1.Location = new Point(454, 1);
             button1.Name = "button1";
-            button1.Size = new Size(140, 39);
+            button1.Size = new Size(140, 49);
             button1.TabIndex = 6;
             button1.Text = "Insert";
             button1.UseVisualStyleBackColor = false;
@@ -62,7 +62,7 @@
             button2.ForeColor = Color.Gold;
             button2.Location = new Point(746, 0);
             button2.Name = "button2";
-            button2.Size = new Size(140, 38);
+            button2.Size = new Size(140, 48);
             button2.TabIndex = 7;
             button2.Text = "Delete";
             button2.UseVisualStyleBackColor = false;
@@ -76,7 +76,7 @@
             button3.ForeColor = Color.Gold;
             button3.Location = new Point(600, 0);
             button3.Name = "button3";
-            button3.Size = new Size(140, 40);
+            button3.Size = new Size(140, 50);
             button3.TabIndex = 8;
             button3.Text = "Update";
             button3.UseVisualStyleBackColor = false;
@@ -112,9 +112,9 @@
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(-7, 73);
+            panel1.Location = new Point(-7, 63);
             panel1.Name = "panel1";
-            panel1.Size = new Size(901, 42);
+            panel1.Size = new Size(901, 52);
             panel1.TabIndex = 11;
             // 
             // label1

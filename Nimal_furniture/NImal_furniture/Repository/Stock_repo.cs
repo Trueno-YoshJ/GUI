@@ -12,12 +12,12 @@ using Nimal_furniture.Models;
 
 namespace Nimal_furniture.Repository
 {
-    public class clients_repo
+    public class Stock_repo
     {
         private readonly string connectionString = "Data Source=TRON\\TEW_SQLEXPRESS;Initial Catalog=Myinventory;Integrated Security=True;Trust Server Certificate=True";
-        public List<Clients> GetClients()
+        public List<stocks> GetClients()
         {
-            var clients = new List<Clients>();
+            var clients = new List<stocks>();
             try
             {
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -29,7 +29,7 @@ namespace Nimal_furniture.Repository
                         using (SqlDataReader reader = command.ExecuteReader())
                             while (reader.Read())
                             {
-                                Clients client = new Clients();
+                                stocks client = new stocks();
                                 client.id = reader.GetInt32(0);
                                 client.name = reader.GetString(1);
                                 client.type = reader.GetString(2);
@@ -47,7 +47,7 @@ namespace Nimal_furniture.Repository
             }
             return clients;
         }
-        public Clients? GetClients(int id)
+        public stocks? GetClients(int id)
         {
             try
             {
@@ -61,7 +61,7 @@ namespace Nimal_furniture.Repository
                         using (SqlDataReader reader = command.ExecuteReader())
                             if (reader.Read())
                             {
-                                Clients client = new Clients();
+                                stocks client = new stocks();
                                 client.id = reader.GetInt32(0);
                                 client.name = reader.GetString(1);
                                 client.type = reader.GetString(2);
@@ -78,7 +78,7 @@ namespace Nimal_furniture.Repository
             }
             return null;
         }
-        public void CreateClients(Clients clients)
+        public void CreateClients(stocks clients)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace Nimal_furniture.Repository
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
         }
-        public void UpdateClients(Clients clients)
+        public void UpdateClients(stocks clients)
         {
             try
             {

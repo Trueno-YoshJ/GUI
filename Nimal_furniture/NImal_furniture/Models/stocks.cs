@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nimal_furniture.Models
 {
-    public class Clients
+    public class stocks
     {
         public int id;
         public string name = "";

@@ -32,7 +32,7 @@ namespace Nimal_furniture
             dataTable.Columns.Add("Quantity");
             dataTable.Columns.Add("Price");
 
-            var repo = new clients_repo();
+            var repo = new Stock_repo();
             var clients = repo.GetClients();
 
             foreach (var client in clients)
@@ -71,7 +71,7 @@ namespace Nimal_furniture
             if (val == null || val.Length == 0) return;
 
             int clientId = int.Parse(val);
-            var repo = new clients_repo();
+            var repo = new Stock_repo();
             var client = repo.GetClients(clientId);
             if (client == null) return;
 
@@ -92,13 +92,13 @@ namespace Nimal_furniture
             if (val == null || val.Length == 0) return;
 
             int clientId = int.Parse(val);
-            DialogResult dialogResult = MessageBox.Show("Do you want to permanently delete this from the inventory?", "Delete Client", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to permanently delete this stock from the inventory?", "Delete Client", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.No)
             {
                 return;
             }
 
-            var repo = new clients_repo();
+            var repo = new Stock_repo();
             repo.DeleteClient(clientId);
             ReadClients();
         }
@@ -131,6 +131,11 @@ namespace Nimal_furniture
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

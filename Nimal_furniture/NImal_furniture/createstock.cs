@@ -21,7 +21,7 @@ namespace NImal_furniture
             this.DialogResult = DialogResult.Cancel;
         }
         private int clientId = 0;
-        public void EditClient(Clients clients)
+        public void EditClient(stocks clients)
         {
             //this.Text = "Edit Client";
             //this.lbTitle.Text = "Edit Client";
@@ -39,7 +39,7 @@ namespace NImal_furniture
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            Clients client = new Clients();
+            stocks client = new stocks();
 
             client.id = this.clientId;
             client.name = this.tb_name.Text;
@@ -55,7 +55,7 @@ namespace NImal_furniture
                 return;
             }
 
-            var repo = new clients_repo();
+            var repo = new Stock_repo();
             if (client.id == 0)
             {
                 repo.CreateClients(client);
