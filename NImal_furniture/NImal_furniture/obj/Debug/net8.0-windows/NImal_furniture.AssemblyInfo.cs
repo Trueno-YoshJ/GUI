@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NImal_furniture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fb1f035d193e6e820c9de774d2fb5874fa954e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f777d89394dc7354f7134c3a849ed66036ac8c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("NImal_furniture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NImal_furniture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\nimal_furniture\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|c:\\users\\user\\onedrive\\documents\\github\\gui\\nimal_furniture\\nimal_furniture\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|c:\\users\\user\\onedrive\\documents\\github\\gui\\nimal_furniture\\nimal_furniture\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|c:\\users\\user\\onedrive\\documents\\github\\gui\\nimal_furniture\\nimal_furniture\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|c:\\users\\user\\onedrive\\documents\\github\\gui\\nimal_furniture\\nimal_furniture\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\nimal_furniture\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\nimal_furniture\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\nimal_furniture\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\nimal_furniture\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\nimal_furniture\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEF292F0-1E58-4B5D-8D63-38F97FDCA8D3}|NImal_furniture\\NImal_furniture.csproj|solutionrelative:nimal_furniture\\createstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,15 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Dashboard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Dashboard.cs",
               "RelativeDocumentMoniker": "NImal_furniture\\Dashboard.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Dashboard.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Dashboard.cs [Design]",
               "RelativeToolTip": "NImal_furniture\\Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T10:49:29.877Z",
@@ -47,35 +47,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Inventory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Inventory.cs",
               "RelativeDocumentMoniker": "NImal_furniture\\Inventory.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Inventory.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Inventory.cs [Design]",
               "RelativeToolTip": "NImal_furniture\\Inventory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T15:11:02.128Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-06T15:11:02.128Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Login.cs",
               "RelativeDocumentMoniker": "NImal_furniture\\Login.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Login.cs [Design]",
-              "RelativeToolTip": "NImal_furniture\\Login.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Login.cs [Design]*",
+              "RelativeToolTip": "NImal_furniture\\Login.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T10:27:01.773Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Signup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Signup.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Signup.cs",
               "RelativeDocumentMoniker": "NImal_furniture\\Signup.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\Signup.cs [Design]",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\Signup.cs [Design]",
               "RelativeToolTip": "NImal_furniture\\Signup.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T14:33:26.275Z",
@@ -83,15 +82,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "createstock.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\createstock.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\Nimal_furniture\\NImal_furniture\\createstock.cs",
               "RelativeDocumentMoniker": "NImal_furniture\\createstock.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\GUI\\NImal_furniture\\NImal_furniture\\createstock.cs [Design]",
               "RelativeToolTip": "NImal_furniture\\createstock.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:00:17.959Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-03-06T14:00:17.959Z"
             }
           ]
         }

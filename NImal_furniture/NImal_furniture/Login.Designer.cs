@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            login_username = new TextBox();
             login_close = new Label();
             signup_link = new LinkLabel();
             label4 = new Label();
@@ -41,6 +40,7 @@
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,7 +50,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Wheat;
-            panel1.Controls.Add(login_username);
+            panel1.Controls.Add(textBox1);
             panel1.Controls.Add(login_close);
             panel1.Controls.Add(signup_link);
             panel1.Controls.Add(label4);
@@ -64,16 +64,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(891, 512);
             panel1.TabIndex = 0;
-            // 
-            // login_username
-            // 
-            login_username.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            login_username.Location = new Point(435, 158);
-            login_username.Name = "login_username";
-            login_username.PasswordChar = '*';
-            login_username.Size = new Size(430, 31);
-            login_username.TabIndex = 11;
-            login_username.TextChanged += login_username_TextChanged;
             // 
             // login_close
             // 
@@ -193,6 +183,14 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(436, 151);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(429, 31);
+            textBox1.TabIndex = 12;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -225,6 +223,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label login_close;
-        private TextBox login_username;
+        private TextBox textBox1;
     }
 }
